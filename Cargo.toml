@@ -1,0 +1,6 @@
+[package]
+name = "mathe-project"
+version = "0.1.0"
+authors = ["Tobias Simperl <tobi@realraum.at>"]
+
+[dependencies]
