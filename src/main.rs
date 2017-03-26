@@ -1,5 +1,39 @@
 fn main() {
 
+
+}
+
+#############################################################################################################
+
+/*
+//approximation for e
+
+fn name(arg: Type) -> RetType {
+	
+	let mut eul = 1.0;
+	let mut approx: f64 = 0.0;
+	let mut step = 1.0;
+
+	for divi in 1..14 {
+				
+		let divin = divi as f64;
+
+		step = divin*step;
+		eul = eul+approx;
+		approx = 1.0/ step;
+
+	}
+
+	println!("Wert von e {}", eul );
+}
+*/
+
+#############################################################################################################
+
+
+
+/*
+
 println!("Programm zu prüfung von Kommutativ- Distriputiv- und Kommutativ Gesetz!");     
 println!("Abschnitt zur Prüfung des Kommutativ Gesestz der Addition für x Element N 0 bis 100");
 
@@ -14,12 +48,6 @@ for x in 0..101 {
 
 
 println!("number o errors: {} ",errors);
-
-	
-}
-
-
-/*
 
 	
 */
