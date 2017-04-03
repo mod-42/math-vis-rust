@@ -1,17 +1,50 @@
-fn main() {
-
-	let vect1 = vec![1, 6];
-	let vect2 = vec![2, 6];
-	let vect3 = vec![0, 6];
-
-	for num in &vect1 {
+ fn main() {
     
-	//  = vect1+vect2;
+    let cycl = 7;
+	let mut vect1 = vec![0,];
+	let mut vect2 = vec![2,];
+	let mut eul = vec![2,];
+	
+	/*filling of vect1 with the Numbers 2 to m and vect2 with 
+	the number 1*/
 
-	println!("this is the Vector {}", vect1);
+	for i in 0..(cycl - 1) {
+		
+		vect1.push(i+2);		
+		vect2.push(1);
+
+	} 
 	
+	for i in 0..6 {
+		
+		let mut c = 0;
+		let mut d = 0;
+		let mut e = 0;
+		let mut k = 6;
+
+		for j in 0..6 {
+
+			c = vect2[k] * 10 + d;
+
+			e = c % vect1[k];
+			
+			d = c / vect1[k];
+
+		    vect2[k] = e;
+
+			k -= 1;
+
+		}
+		
+		eul.push(d);
 	}
-	
+
+	for i in 0..cycl {
+		
+		println!("{}", eul[i]);
+
+	}
+
 }
 
 //#############################################################################################################
